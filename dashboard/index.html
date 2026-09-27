@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Executive Portfolio Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">PM</div><div><strong>Northstar</strong><span>Project Office</span></div></div>
+      <nav>
+        <a class="active" href="#overview">◈ <span>Overview</span></a>
+        <a href="#portfolio">▦ <span>Portfolio</span></a>
+        <a href="#actions">✓ <span>Actions</span></a>
+        <a href="#risks">△ <span>Risks & Issues</span></a>
+      </nav>
+      <div class="sidebar-footer"><span class="status-dot"></span> Data refreshed<br><b>27 Sep 2026 · 08:45</b></div>
+    </aside>
+    <main class="main" id="overview">
+      <header class="topbar"><div><p class="eyebrow">PROJECT MANAGEMENT OFFICE</p><h1>Executive Portfolio</h1><p class="muted">A concise view of delivery health, priorities and decisions.</p></div><button class="export-btn" onclick="window.print()">↥ Export report</button></header>
+      <section class="kpi-grid">
+        <article class="kpi"><div class="kpi-icon blue">◫</div><div><span>Active projects</span><strong>12</strong><small class="positive">↑ 2 this quarter</small></div></article>
+        <article class="kpi"><div class="kpi-icon green">✓</div><div><span>On track</span><strong>75%</strong><small class="positive">↑ 8.4% vs last month</small></div></article>
+        <article class="kpi"><div class="kpi-icon amber">◷</div><div><span>Budget utilized</span><strong>68.4%</strong><small>USD 1.24M of 1.81M</small></div></article>
+        <article class="kpi"><div class="kpi-icon red">△</div><div><span>Open risks</span><strong>08</strong><small class="negative">↑ 2 need attention</small></div></article>
+      </section>
+      <section class="content-grid">
+        <article class="card health-card"><div class="card-heading"><div><h2>Portfolio health</h2><p class="muted">Delivery status by project</p></div><span class="period">Q3 · 2026⌄</span></div><div class="health-layout"><div class="donut"><div><b>75%</b><span>On track</span></div></div><div class="legend"><div><i class="dot on"></i><span>On track</span><b>09</b></div><div><i class="dot watch"></i><span>At risk</span><b>02</b></div><div><i class="dot late"></i><span>Off track</span><b>01</b></div></div></div><div class="health-note"><span class="status-dot"></span><span>Portfolio health is <b>stable</b> with focused action required on 3 initiatives.</span></div></article>
+        <article class="card progress-card"><div class="card-heading"><div><h2>Delivery progress</h2><p class="muted">Planned vs actual completion</p></div><span class="period">Last 6 months⌄</span></div><div class="chart" aria-label="Progress chart"><div class="y-labels"><span>100%</span><span>75%</span><span>50%</span><span>25%</span><span>0%</span></div><div class="chart-area"><div class="gridline g1"></div><div class="gridline g2"></div><div class="gridline g3"></div><div class="gridline g4"></div><svg viewBox="0 0 600 190" preserveAspectRatio="none"><polyline class="planned" points="0,155 100,130 200,115 300,92 400,66 500,45 600,25"/><polyline class="actual" points="0,165 100,148 200,126 300,111 400,91 500,65 600,52"/></svg><div class="x-labels"><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span></div></div></div><div class="chart-legend"><span><i class="line blue-line"></i> Planned</span><span><i class="line navy-line"></i> Actual</span></div></article>
+      </section>
+      <section class="card projects" id="portfolio"><div class="card-heading"><div><h2>Priority initiatives</h2><p class="muted">Projects requiring leadership visibility</p></div><button class="link-btn">View portfolio →</button></div><div class="table-wrap"><table><thead><tr><th>PROJECT</th><th>OWNER</th><th>STATUS</th><th>PROGRESS</th><th>HEALTH</th><th>NEXT MILESTONE</th></tr></thead><tbody><tr><td><b>ERP Transformation</b><small>Technology · Strategic</small></td><td>Laura Méndez</td><td><span class="badge in-progress">In progress</span></td><td><div class="progress"><span style="width:72%"></span></div><small>72%</small></td><td><span class="health-pill good">● Good</span></td><td>UAT sign-off <small>30 Sep 2026</small></td></tr><tr><td><b>Customer Experience 2.0</b><small>Operations · Strategic</small></td><td>Andrés Ruiz</td><td><span class="badge at-risk">At risk</span></td><td><div class="progress"><span style="width:54%"></span></div><small>54%</small></td><td><span class="health-pill warning">● Watch</span></td><td>Design review <small>04 Oct 2026</small></td></tr><tr><td><b>Q4 Growth Campaign</b><small>Marketing · Business</small></td><td>Paula Moreno</td><td><span class="badge in-progress">In progress</span></td><td><div class="progress"><span style="width:61%"></span></div><small>61%</small></td><td><span class="health-pill good">● Good</span></td><td>Launch readiness <small>08 Oct 2026</small></td></tr><tr><td><b>Process Excellence Pilot</b><small>Operations · Internal</small></td><td>Julia Cárdenas</td><td><span class="badge blocked">Blocked</span></td><td><div class="progress"><span style="width:36%"></span></div><small>36%</small></td><td><span class="health-pill critical">● Critical</span></td><td>Decision gate <small>01 Oct 2026</small></td></tr></tbody></table></div></section>
+      <section class="bottom-grid" id="actions"><article class="card"><div class="card-heading"><div><h2>Leadership actions</h2><p class="muted">Decisions and follow-ups</p></div><span class="count">03 open</span></div><ul class="action-list"><li><span class="action-check"></span><div><b>Approve additional ERP training budget</b><small>Owner: CFO Office · Due 28 Sep</small></div><span class="priority high">High</span></li><li><span class="action-check"></span><div><b>Confirm creative vendor escalation</b><small>Owner: Marketing · Due 29 Sep</small></div><span class="priority medium">Medium</span></li><li><span class="action-check"></span><div><b>Authorize pilot rollout</b><small>Owner: Operations · Due 01 Oct</small></div><span class="priority medium">Medium</span></li></ul></article><article class="card" id="risks"><div class="card-heading"><div><h2>Risk watchlist</h2><p class="muted">Top exposures by impact</p></div><button class="link-btn">Open register →</button></div><div class="risk-row"><span class="risk-icon critical-bg">!</span><div><b>Master data validation delay</b><small>ERP Transformation · Owner: A. Moreno</small></div><span class="risk-level critical-text">High</span></div><div class="risk-row"><span class="risk-icon warning-bg">!</span><div><b>External partner dependency</b><small>Customer Experience 2.0 · Owner: P. Moreno</small></div><span class="risk-level warning-text">Medium</span></div><div class="risk-row"><span class="risk-icon warning-bg">!</span><div><b>Change adoption resistance</b><small>Process Excellence · Owner: J. Cárdenas</small></div><span class="risk-level warning-text">Medium</span></div></article></section>
+      <footer>Northstar PMO · Confidential internal report <span>Prepared for Executive Leadership Team</span></footer>
+    </main>
+  </div>
+</body>
+</html>
